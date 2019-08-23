@@ -15,19 +15,19 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|grouptitle|integer|null: false, foreign_key:
+
+|name|integer|null: false, foreign_key:
 true|
 
 ### Association
 - has_many :messages
 - has_many :users, through: :groups_users
+- has_many :groups_users
 
 ##usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
 |name|string|null: false, foreign_key:true|
 |password|string|null: false, foreign_key: true|
 |e-mail|string|null: false, foreign_key: true|
@@ -36,13 +36,14 @@ true|
 ### Association
 - has_many :messages
 - has_many :groups, through :groups_users
+- has_many :groups_users
 
 ##messageテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|text|integer|null: false, foreign_key: true|
-|image|integer|null: false, foreign_key: true|
+|text|integer|
+|image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
