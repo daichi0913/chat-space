@@ -1,0 +1,151 @@
+.header-left {
+  height: 100px;
+  background-color: #253141;
+  width: 300px;
+  float: left;
+
+  &__logo{
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 35px;
+    float: left;
+    padding-left: 20px;
+  }
+  
+  .contents__btn--icon{
+    color: #ffffff;
+    float: right;
+    padding-top: 35px;
+    padding-right: 20px;
+  }
+  }
+
+  
+.header-right{
+  width: calc(100% - 300px);
+  background-color: #eeeeee;
+  float: right;
+  height: 100px;
+  &__logo{
+  }
+  &__logo0{
+    padding-top: 35px;
+    float: left;
+    padding-left: 40px;
+    color: black;
+    font-size: 20px;
+  
+  
+  &__logo2{
+    padding-top: 15px;
+    color: #999999;
+    font-size: 12px;
+    }
+  }
+
+
+  &__logo1{
+  float: right;
+  height: 40px;
+  color: blue;
+  border:1px solid blue;
+  width: 70px;
+  text-align: center;
+  line-height: 40px;
+  margin: 28px 40px 0 0;
+
+}
+}
+
+.contents{
+  width: 300px;
+  background-color: #2f3e51;
+  float: left;
+  height: calc(100vh - 100px); 
+ 
+  .left-content{
+    color: #ffffff;
+    padding-top: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  .left-content1{
+    color: #ffffff;
+    font-size: 11px;
+    padding-top:5px;
+  }
+}
+.contents-main{
+  background-color: #fafafa;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 300px);
+  float: right;
+  position: relative;
+
+  .main0{
+  
+  }
+  .main1{
+    padding-top: 46px;
+    float: left;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main2{
+    padding-top: 10px;
+  }
+  .main4{
+    padding-top: 40px;
+  }
+  .main3x{
+    padding-top: 50px;
+    font-size: 12px;
+    color: #999999;
+    padding-left: 10px;
+    float: left;
+  }
+  .main5{
+    padding-top: 10px;
+  }
+}
+.footer-main{
+  width: calc(100vw - 300px);
+  height: 70px;
+  background-color: grey;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+
+.footer{
+  background-color: #ffffff;
+  margin: 10px 0 10px 40px;
+  width: 615px;
+  float: left;
+  height: 50px;
+
+.footer1{
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  
+  .contents__btn--i{
+    float:right;
+    line-height: 50px;
+    padding-right: 10px;
+  }
+}
+
+}
+
+.footer3{
+  background: #38aef0;
+  margin: 10px 0 10px 15px;
+  width: 80px;
+
+  .footer4{
+    text-align: center;
+    line-height: 50px;
+  }
+}
+}
