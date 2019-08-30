@@ -1,43 +1,40 @@
 .header-left
   .header-left__logo
-    名前
+    =current_user.name
   .header-left__logo2
-  = fa_icon 'cog', class: "contents__btn--icon"
+  = link_to edit_user_path(current_user) do
+    = fa_icon 'cog', class: "contents__btn--icon"
   .header-left__logo3
-  = fa_icon 'edit', class: "contents__btn--icon"
+  = link_to new_group_path do
+    = fa_icon 'edit', class: "contents__btn--icon"
 .header-right
   .header-right__logo
     .header-right__logo0
-      LINEグループ
+      =@group.name
       .header-right__logo2
-        キングコング
+        
     .header-right__logo1
       Edit
 .contents
   .contents0
-    .left-content
-      横浜優勝
-      .left-content1
-        オンラインサロン
+    -current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .left-content
+          =group.name
+          .left-content1
+            = group.show_last_message
 .contents-main
-  .main0
-    .main1
-      ユーザー名前
-      .main2
-        こんにちは
-      .main4
-      円高
-      .main5
-      米中対立
-    .main3
-      .main3x
-        日付
+  .messages
+    = render @messages
+
   .footer-main
-    .footer
-      .footer1
-        テキスト
-        .footer2
-          = fa_icon 'image', class: "contents__btn--i"
-    .footer3
-      .footer4
-        send 
+    = form_for [@group, @message] do |f|
+      .footer
+        .footer1
+          = f.text_field :content, class: 'footer00', placeholder: 'type a message'
+          .footer2
+            = f.label :image, class: 'contents__btn--i' do
+              = fa_icon 'image', class: "contents__btn--i"
+              = f.file_field :image, class: 'footer0'
+      .footer3
+        = f.submit 'Send', class: 'footer4'

@@ -2,7 +2,7 @@
   height: 100px;
   background-color: #253141;
   width: 300px;
-  float: left;
+
 
   &__logo{
     color: #ffffff;
@@ -20,11 +20,11 @@
   }
   }
 
-  
 .header-right{
   width: calc(100% - 300px);
   background-color: #eeeeee;
   float: right;
+  margin-top:-100px;
   height: 100px;
   &__logo{
   }
@@ -81,34 +81,27 @@
   width: calc(100vw - 300px);
   float: right;
   position: relative;
+  .messages{
+    .main0{
+      .main1{
+        padding-top: 46px;
+        padding-left: 40px;
+        display: flex;
+        .main2x{
+          font-size: 12px;
+          color: #999999;
+          display: flex;
+          padding-left: 10px;
+          }
+        }
+      .main3x{
+        padding-top: 10px;
+        padding-left: 40px;
+        }
+      }  
+    }
+  }
 
-  .main0{
-  
-  }
-  .main1{
-    padding-top: 46px;
-    float: left;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .main2{
-    padding-top: 10px;
-  }
-  .main4{
-    padding-top: 40px;
-  }
-  .main3x{
-    padding-top: 50px;
-    font-size: 12px;
-    color: #999999;
-    padding-left: 10px;
-    float: left;
-  }
-  .main5{
-    padding-top: 10px;
-  }
-}
 .footer-main{
   width: calc(100vw - 300px);
   height: 70px;
@@ -120,32 +113,44 @@
 .footer{
   background-color: #ffffff;
   margin: 10px 0 10px 40px;
-  width: 615px;
+  width: 945px;
   float: left;
   height: 50px;
 
-.footer1{
-  display: flex;
-  justify-content: space-between;
-  line-height: 50px;
-  
-  .contents__btn--i{
-    float:right;
+
+  .footer1{
+    display: flex;
+    justify-content: space-between;
     line-height: 50px;
-    padding-right: 10px;
+  
+    .contents__btn--i{
+      float:right;
+      line-height: 50px;
+      padding-right: 10px;
+    }
+
+    .footer00{
+      width: 900px;
+      border: none;
+    }
+
+    .footer0{
+      display:none;
+    }
+}
+}
+  .footer3{
+    float: left;
+    margin: 10px 0 10px 15px;
+    line-height: 50px;
+    
+    
   }
-}
-
-}
-
-.footer3{
-  background: #38aef0;
-  margin: 10px 0 10px 15px;
-  width: 80px;
-
   .footer4{
     text-align: center;
-    line-height: 50px;
+    background: #38aef0;
+    width: 80px;
+    height: 50px;
   }
-}
+
 }
