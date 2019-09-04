@@ -12,7 +12,9 @@
     .header-right__logo0
       =@group.name
       .header-right__logo2
-      =current_user.name
+        Member
+        - @group.users.each do |f|
+          = f.name
   = link_to edit_group_path(@group) do
     .header-right__logo1
       EDIT
