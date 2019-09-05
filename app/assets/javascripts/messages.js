@@ -1,5 +1,6 @@
-$(document).on('turbolinks:load', function(){
+$(function(){
   function buildHTML(message) {
+
     var content = message.content ? `${ message.content }` : "";
     var img = message.image ? `<img src= ${ message.image }>` : "";
     var html = `<div class="main0" data-id="${message.id}">
@@ -45,4 +46,4 @@ $(document).on('turbolinks:load', function(){
       $('.footer4').prop('disabled', false); 
     })
   })
-});
+})
