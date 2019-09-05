@@ -27,22 +27,22 @@
   margin-top:-100px;
   height: 100px;
   &__logo{
-  }  
-  &__logo0{
     padding-top: 35px;
     float: left;
     padding-left: 40px;
-    color: black;
     font-size: 20px;
-  
-  
+   &__logo0{
+    color: black;
+    font-size: 2px;
+   }
+  }
   &__logo2{
     padding-top: 15px;
     color: #999999;
     font-size: 12px;
   }
-
-  }
+  
+  
 
   &__logo1{
   float: right;
