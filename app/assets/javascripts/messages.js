@@ -70,11 +70,12 @@ $(function(){
           $('.main0:last').append(html);
     })
   })
-  .fail(function(){
-    alert('自動更新ができませんでした');
-  })
+  //   };
+  //  fail(function(){
+  //   alert('自動更新ができませんでした');
+  // })
   $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-  };
+};
   $(function(){
     setInterval(reloadMessages, 5000);
   })
