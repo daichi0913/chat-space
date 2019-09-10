@@ -66,17 +66,20 @@
   background-color: #2f3e51;
   float: left;
   height: calc(100vh - 100px); 
+  text-decoration: none;
  
   .left-content{
     color: #ffffff;
     padding-top: 20px;
     font-size: 15px;
     padding-left: 20px;
+    text-decoration: none;
   }
   .left-content1{
     color: #ffffff;
     font-size: 11px;
     padding-top:5px;
+    text-decoration: none;
   }
 }
 .contents-main{
@@ -85,6 +88,7 @@
   width: calc(100vw - 300px);
   float: right;
   position: relative;
+  text-decoration: none;
   
 
 
@@ -247,4 +251,8 @@
   float:right;
   line-height: 50px;
   padding-right: 10px;
+}
+
+a:link{
+  text-decoration: none;
 }
