@@ -30,14 +30,25 @@
   .messages
     = render @messages
 
-  .footer-main
-    = form_for [@group, @message] do |f|
-      .footer
-        .footer1
-          = f.text_field :content, class: 'footer00', placeholder: 'type a message'
-          .footer2
-            = f.label :image, class: 'contents__btn--i' do
-              = fa_icon 'image', class: "contents__btn--i"
-              = f.file_field :image, class: 'footer0'
-      .footer3
-        = f.submit 'Send', class: 'footer4'
+  .contents-main__footer-main
+    = form_for [@group, @message],class: 'form99' do |f|
+      .contents-main__footer-main__footer
+        = f.text_field :content, class: 'footer00', placeholder: 'type a message'
+        = f.label :image, class: 'contents__btn--i' do
+          = fa_icon 'image', class: "contents__btn--i"
+          = f.file_field :image, class: 'footer0'
+      = f.submit 'Send', class: 'footer4'
+
+
+    -#       .footer-main
+    -# = form_for [@group, @message] do |f|
+    -#   .footer
+    -#     .footer1
+    -#       = f.text_field :content, class: 'footer00', placeholder: 'type a message'
+    -#       .footer2
+    -#         = f.label :image, class: 'contents__btn--i' do
+    -#           = fa_icon 'image', class: "contents__btn--i"
+    -#           = f.file_field :image, class: 'footer0'
+    -#   .footer3
+    -#     = f.submit 'Send', class: 'footer4'
+

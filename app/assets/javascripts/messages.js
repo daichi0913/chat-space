@@ -68,15 +68,14 @@ $(function(){
           var html = buildHTML(message);
 
           $('.main0:last').append(html);
+          $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+ })
     })
-  })
+  };
   //   };
   //  fail(function(){
   //   alert('自動更新ができませんでした');
   // })
-  $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
- };
-  
-    setInterval(reloadMessages, 5000);
-  });
 
+    setInterval(reloadMessages, 5000);
+})
